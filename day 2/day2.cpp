@@ -22,6 +22,7 @@ int main()
 {
     ifstream file("input.txt");
     string line;
+    getline(file,line);
     file.close();
 
     long long sum = 0;
@@ -54,6 +55,6 @@ int main()
         }
     }
 
-    cout << ans;
+    cout << sum;
     return 0;
 }
