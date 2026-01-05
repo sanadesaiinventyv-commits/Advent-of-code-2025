@@ -1,5 +1,6 @@
 #include <iostream>
-#include <string>
+#include<fstream>
+#include<string>
 using namespace std;
 
 bool invalid(long long x)
@@ -41,7 +42,7 @@ int main()
             for (long long x = a; x <= b; x++)
             {
                 if (invalid(x))
-                    ans += x;
+                    sum += x;
             }
             a = b = 0;
             first = true;
